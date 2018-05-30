@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Segments</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\stylesheet.css">
+    <meta name="description" content="Styleguide for Billum Friskole">
+    <meta name="author" content="gruppe 23">
+  </head>
+
+  <body class="color02">
+    <header class="color01 flex-direction-row">
+      <div class="logo-tile">
+        <a href="index.html">
+          <img src="assets\images\logo.png" alt="Billum Friskole Logo">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-drop">
+          <a href="styleguide.html" class="knap-drop"><h3>BRAND VALUES</h3></a>
+          <div class="dropdown-content">
+            <a href="styleguide.html#position"><p>POSITION STATEMENT</p></a>
+            <a href="styleguide.html#logo"><p>LOGO FORMALITIES</p></a>
+            <a href="styleguide.html#typography"><p>TYPOGRAPHY</p></a>
+            <a href="styleguide.html#fotos"><p>FOTOS</p></a>
+            <a href="styleguide.html#farver"><p>FARVER</p></a>
+            <a href="styleguide.html#andvendte-farver"><p>ANVENDTE FARVER</p></a>
+          </div>
+        </div>
+        <div class="nav-drop">
+          <a href="codesegments.html" class="knap-drop"><h3>CODE SEGMENTS</h3></a>
+          <div class="dropdown-content">
+            <a href="codesegments.html#form"><p>FORM ELEMENTS</p></a>
+            <a href="codesegments.html#nav"><p>NAVIGATION</p></a>
+            <a href="codesegments.html#grid"><p>GRID SYSTEM</p></a>
+            <a href="codesegments.html#header"><p>HEADER</p></a>
+            <a href="codesegments.html#footer"><p>FOOTER</p></a>
+          </div>
+        </div>
+        <div class="nav-drop">
+          <a href="assets.html"><h3>ASSETS</h3></a>
+          <div class="dropdown-content">
+            <a href="assets.html#print"><p>PRINTABLES</p></a>
+            <a href="assets.html#merch"><p>MERCHANDISE LISTING</p></a>
+            <a href="assets.html#assortment"><p>WEBSITES ASSORTMENT</p></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tilecontainer flex-direction-column">
+        <div class="horizontalspacer"></div>
+        <h1>Code Segments</h1>
+        <div class="line color01"></div>
+        <div class="horizontalspacer"></div>
+      </section>
+      <section class="tilecontainer flex-direction-column">
+          <h3 id="form">Form Elements</h3>
+          <br>
+          <p>Disse elementer er de små basale ting på siden, som knapper, ikoner, navigations tile og separations linje.</p>
+          <br>
+          </section>
+
+          <section class="tilecontainer flex-direction-row">
+            <div class="tile flex-direction-column">
+              <p>Navigation-tile med dropdown indhold</p>
+              <img src="assets\images\styleguide\nav-tile.JPG" alt="nav-tile" style="height:auto;width:150px;">
+              <img src="assets\images\styleguide\nav-dropdown.JPG" alt="nav-dropdown" style="height:auto;width:150px;">
+            </div>
+            <div class="verticalspacer"></div>
+            <div class="tile flex-direction-coloumn">
+              <p>The Code:</p>
+              <xmp>
+<div class="nav-drop">
+  <a href="#" class="knap-drop"><h3>SKOLE</h3></a>
+  <div class="dropdown-content">
+    <a href="om-skolen.html"><p>OM SKOLEN</p></a>
+    <a href="7-8-klasse.html"><p>7-8 KLASSE</p></a>
+    <a href="dagligdagen-skole.html"><p>DAGLIGDAGEN</p></a>
+    <a href="ansatte.html"><p>ANSATTE</p></a>
+  </div>
+</div>
+              </xmp>
+            </div>
+            <div class="horizontalspacer"></div>
+            </section>
+
+            <section class="tilecontainer flex-direction-row">
+              <div class="tile flex-direction-column">
+                <p>"Indmeldelseblanket"-knap</p>
+                <img src="assets\images\styleguide\indmeldelseblanket.JPG" alt="indmeldelsesblanket" style="height:auto;width:150px;">
+              </div>
+              <div class="verticalspacer"></div>
+              <div class="tile flex-direction-column">
+                <p>The Code:</p>
+                <xmp>
+<p>
+  <a href="assets\pdf-files\indskrivning-billum-friskole-2.pdf" download>
+    <button class="button">Indmeldelseblanket</button>
+  </a>
+</p>
+                </xmp>
+              </div>
+              <div class="horizontalspacer"></div>
+            </section>
+
+            <section class="tilecontainer flex-direction-row">
+              <div class="tile flex-direction-column">
+                <p>Facebook-ikon i navigationen</p>
+                <img src="assets\images\styleguide\icon-nav.JPG" alt="icon nav" style="height:auto;width:150px;">
+              </div>
+              <div class="verticalspacer"></div>
+              <div class="tile flex-direction-column">
+                <p>The Code:</p>
+                <xmp>
+  <a href="https://www.facebook.com/billumfriskole/">
+  <img src="assets/images/icons/facebook.png" alt="Billum Friskole Facebook" style="width:25px;height:25px;">
+  Facebook</p></a>
+                </xmp>
+              </div>
+              <div class="horizontalspacer"></div>
+            </section>
+
+            <section class="tilecontainer flex-direction-row">
+              <div class="tile">
+                <p>Facebook-ikon i footeren</p>
+                <img src="assets\images\styleguide\icon-footer.JPG" alt="icon footer" style="height:auto;width:150px;">
+              </div>
+              <div class="verticalspacer"></div>
+              <div class="tile">
+                <p>The Code:</p>
+                <xmp>
+<h1>Facebook</h1>
+<p>
+  <a href="https://www.facebook.com/billumfriskole/">
+    <img src="assets/images/icons/facebook.png" alt="Billum Friskole Facebook" style="width:50px;height:50px;">
+  </a>
+</p>
+                </xmp>
+              </div>
+              <div class="horizontalspacer"></div>
+            </section>
+
+            <section class="tilecontainer flex-direction-column">
+              <div class="tile flex-direction-column">
+                <p>Separations linje</p>
+                <img src="assets\images\styleguide\seperation-line.JPG" alt="seperation line" style="height:auto;width:500px;">
+              </div>
+              <div class="verticalspacer"></div>
+              <div class="tile flex-direction-column">
+                <p>The Code:</p>
+                <xmp>
+<div class="line color01"></div>
+                </xmp>
+              </div>
+              <div class="horizontalspacer"></div>
+            </section>
+
+      </section>
+      <div class="horizontalspacer"></div>
+      <section class="tilecontainer flex-direction-column">
+        <article class="tile-full-width flex1">
+          <h3 id="nav">Navigation</h3>
+          <br>
+          <p>Denne kode er specifikt for navigationen i headeren.</p>
+          <img src="assets\images\styleguide\nav.JPG" alt="seperation line" style="height:auto;width:500px;">
+          <br>
+        </article>
+        <section class="tile flex1">
+          <h3>The Code:</h3>
+          <xmp>
+<nav>
+  <div class="nav-drop">
+    <a href="#" class="knap-drop"><h3>SKOLE</h3></a>
+    <div class="dropdown-content">
+      <a href="om-skolen.html"><p>OM SKOLEN</p></a>
+      <a href="7-8-klasse.html"><p>7-8 KLASSE</p></a>
+      <a href="dagligdagen-skole.html"><p>DAGLIGDAGEN</p></a>
+      <a href="ansatte.html"><p>ANSATTE</p></a>
+    </div>
+  </div>
+  <div class="nav-drop">
+    <a href="#" class="knap-drop"><h3>SFO</h3></a>
+    <div class="dropdown-content">
+      <a href="om-sfo.html"><p>OM SFO</p></a>
+      <a href="dagligdagen-sfo.html"><p>DAGLIGDAGEN SFO</p></a>
+      <a href="ansatte-sfo.html"><p>ANSATTE SFO</p></a>
+    </div>
+  </div>
+  <a href="boernehave.html"><h3>BØRNEHAVE</h3></a>
+  <div class="nav-drop">
+    <a href="#" class="knap-drop"><h3>PRAKTISK INFO</h3></a>
+    <div class="dropdown-content">
+      <a href="indmeldelse.html"><p>INDMELDELSE</p></a>
+      <a href="priser.html"><p>PRISER</p></a>
+      <a href="kalender.html"><p>KALENDER</p></a>
+      <a href="aktiviteter.html"><p>AKTIVITETER</p></a>
+      <a href="vedtaegter.html"><p>VEDTÆGTER</p></a>
+      <a href="vaerdiggrundlag.html"><p>VÆRDIGRUNDLAG</p></a>
+      <a href="undervisningsplaner.html"><p>UNDERVISNINGSPLANER</p></a>
+      <a href="tilsynsfoerende.html"><p>CERTIFICERET TILSYNSFØRENDE</p></a>
+      <a href="udmeldelse.html"><p>UDMELDELSE</p></a>
+    </div>
+  </div>
+  <a href="kontakt.html"><h3>KONTAKT</h3></a>
+</nav>
+          </xmp>
+        </section>
+      </section>
+      <div class="horizontalspacer"></div>
+      <section class="tilecontainer flex-direction-column">
+        <article class="tile-full-width flex1">
+          <h3 id="grid">Grid System</h3>
+          <br>
+          <p>Der er forskellige elementer i grid systemet. Grid systemet på index siden er kontrolleret af en section der holder styr på de tre info bokse, imens grid systemet på undersiderne holder to bokse. For at skabe lige plads mellem de forskellige tiles er der indført horizontal og vertical spacers. For eksempel, hvis du har en section hvor du skal have noget skrift og et billede, vil disse være adskildt fra hinanden med en vertical spacer. Den efterfølgende section vil være adskildt fra den overstående med en horizontal spacer.</p>
+          <p>En article (skrevet indhold) får flex3 class, mens et billede for flex1, hvilket giver article 3/4 af pladsen i den section, mens billedet får 1/4</p>
+          <br>
+        </article>
+        <section class="tile-full-width flex1">
+          <h3>The Code:</h3>
+          <p>Index Tile System:</p>
+          <img src="assets\images\styleguide\tile-index.JPG" alt="index tile" style="height:auto;width:500px;">
+          <xmp>
+<section class="tilecontainer flex-direction-row">
+  <a class="tile flexgrow1" href="aktiviteter.html">
+    <section class="height400 image-fit image001">
+      <div class="height400 color2 fullbox">
+        <h3>Aktiviteter</h3>
+        <p>I hverdagene synger vi samles vi til morgensang, hvor vi synger sange fra den danske højskole sangbog.
+          <br>
+          <br>Andre aktiviteter er bl. a. udflugter hvor med enten hele skolen eller med en klasse tager forskellige steder hen</p>
+      </div>
+    </section>
+  </a>
+  <div class="verticalspacer"></div>
+  <a class="tile flexgrow1" href="7-8-klasse.html">
+    <section class="height400 image-fit image002">
+      <div class="height400 color3 fullbox">
+        <h3>7-8 Klasse</h3>
+        <p>7.-.8 klasse. Efterskoleforberedende Friskole
+          <br>
+          <br>Billum Friskole tilbyder 7-8. klasse med et fokus på at komme videre på efterskole i 9. Det gør vi ved at samarbejde med
+          nogen af områdets efterskoler, hvor man kan komme på besøg og finde ud af om det er den måde man ønsker af afslutte sin grundskole på.</p>
+        </div>
+    </section>
+  </a>
+  <div class="verticalspacer"></div>
+  <a class="tile flexgrow1" target="_blank" href="https://ugeavisen.dk/vesterhavsposten/Billum-Friskole-hverdagen-skal-vaere-en-fest/artikel/341889">
+    <section class="height400 image-fit image003">
+      <div class="height400 color4 fullbox">
+        <h3>Læs Artiklen</h3>
+        <p>Læs artiklen ''Billum Friskole: Hverdagen skal være en fest'' fra Ugeavisen Vesterhavsposten om Billum Friskole og hvordan
+          skoleleder Gitte Møller tænker sig skolen skal være</p>
+      </div>
+    </section>
+  </a>
+  <div class="horizontalspacer"></div>
+</section>
+          </xmp>
+          <p>Tile system på undersider (example from "aktiviteter.html"):</p>
+          <img src="assets\images\styleguide\tile-subsite.JPG" alt="subsite tile" style="height:auto;width:500px;">
+          <xmp>
+<section class="tilecontainer flex-direction-column">
+  <div class="horizontalspacer"></div>
+  <section class="tile-full-width image-fit image005 height200">
+  </section>
+  <div class="horizontalspacer"></div>
+  <h1>Aktiviteter</h1>
+  <div class="line color01"></div>
+  <div class="horizontalspacer"></div>
+</section>
+<section class="tilecontainer flex-direction-row">
+  <article class="tile flex3">
+    <p>Her vil der være noget mere content</p>
+  </article>
+  <div class="verticalspacer"></div>
+  <section class="tile flex1">
+    <img src="assets\images\aktiviteter-sikkerhedsvest.jpg" alt="">
+  </section>
+  <div class="horizontalspacer"></div>
+</section>
+          </xmp>
+        </section>
+      </section>
+      <div class="horizontalspacer"></div>
+      <section class="tilecontainer flex-direction-column">
+        <article class="tile-full-width flex1">
+          <h3 id="header">Header</h3>
+          <br>
+          <p>Dette er koden til hele headeren. Benyt denne kode for at få en header der er ens på alle undersider.</p>
+          <img src="assets\images\styleguide\header.JPG" alt="header" style="height:auto;width:500px;">
+        </article>
+        <section class="tile flex1">
+          <h3>The Code:</h3>
+          <xmp>
+<header class="color01 flex-direction-row">
+  <div class="logo-tile">
+    <a href="index.html">
+      <img src="assets\images\logo.png" alt="Billum Friskole Logo">
+    </a>
+  </div>
+
+  <nav>
+    <div class="nav-drop">
+      <a href="#" class="knap-drop"><h3>SKOLE</h3></a>
+      <div class="dropdown-content">
+        <a href="om-skolen.html"><p>OM SKOLEN</p></a>
+        <a href="7-8-klasse.html"><p>7-8 KLASSE</p></a>
+        <a href="dagligdagen-skole.html"><p>DAGLIGDAGEN</p></a>
+        <a href="ansatte.html"><p>ANSATTE</p></a>
+      </div>
+    </div>
+    <div class="nav-drop">
+      <a href="#" class="knap-drop"><h3>SFO</h3></a>
+      <div class="dropdown-content">
+        <a href="om-sfo.html"><p>OM SFO</p></a>
+        <a href="dagligdagen-sfo.html"><p>DAGLIGDAGEN SFO</p></a>
+        <a href="ansatte-sfo.html"><p>ANSATTE SFO</p></a>
+      </div>
+    </div>
+    <a href="boernehave.html" class="nav-drop"><h3>BØRNEHAVE</h3></a>
+    <div class="nav-drop">
+      <a href="#" class="knap-drop"><h3>PRAKTISK INFO</h3></a>
+      <div class="dropdown-content">
+        <a href="indmeldelse.html"><p>INDMELDELSE</p></a>
+        <a href="priser.html"><p>PRISER</p></a>
+        <a href="kalender.html"><p>KALENDER</p></a>
+        <a href="aktiviteter.html"><p>AKTIVITETER</p></a>
+        <a href="vedtaegter.html"><p>VEDTÆGTER</p></a>
+        <a href="vaerdiggrundlag.html"><p>VÆRDIGRUNDLAG</p></a>
+        <a href="undervisningsplaner.html"><p>UNDERVISNINGSPLANER</p></a>
+        <a href="tilsynsfoerende.html"><p>CERTIFICERET TILSYNSFØRENDE</p></a>
+        <a href="udmeldelse.html"><p>UDMELDELSE</p></a>
+      </div>
+    </div>
+    <a href="kontakt.html"><h3>KONTAKT</h3></a>
+  </nav>
+
+  <div class="header-link-tile">
+    <div class="header-intranet flex-direction-row">
+      <p>
+      <a href="https://billumfriskole.viggo.dk/Account/Login?ReturnUrl=%2F">
+        <img src="assets/images/icons/viggo.png" alt="Billum Friskole Intranet Viggo" style="width:25px;height:25px;">
+      Intranet</p></a>
+    </div>
+
+    <div class="header-facebook-container flex-direction-row">
+        <p>
+        <a href="https://www.facebook.com/billumfriskole/">
+        <img src="assets/images/icons/facebook.png" alt="Billum Friskole Facebook" style="width:25px;height:25px;">
+        Facebook</p></a>
+    </div>
+  </div>
+</header>
+          </xmp>
+        </section>
+      </section>
+      <div class="horizontalspacer"></div>
+      <section class="tilecontainer flex-direction-column">
+        <img src="">
+        <article class="tile-full-width flex1">
+          <h3 id="footer">Footer</h3>
+          <br>
+          <p>Dette er koden til footer'en. Benyt denne kode for at få en footer magen til den på de andre undersider.</p>
+          <img src="assets\images\styleguide\footer.JPG" alt="footer" style="height:auto;width:500px;">
+        </article>
+        <section class="tile-full-width flex1">
+          <h3>The Code:</h3>
+          <xmp>
+<footer class="flex-direction-column">
+  <div class="line color01"></div>
+  <div class="horizontalspacer"></div>
+  <section class="box flex-direction-row">
+    <div class="verticalspacer"></div>
+    <div class="footertile">
+      <h3>Kontakt</h3>
+      <p>Billum friskole </p>
+      <p>Kildegårdvej 20</p>
+      <p> Tlf: + 45 51 88 95 96</p>
+      <p>gimo@billumfriskole.dk</p>
+      <p> Billum friskole</p>
+      <p> 2018 All right reserved</p>
+    </div>
+    <div class="verticalspacer"></div>
+    <div class="verticalspacer"></div>
+    <div class="verticalspacer"></div>
+    <div class="footertile">
+      <h3>Indmeldelse</h3>
+      <p>Klik her for at downloade</p>
+      <p>
+        <a href="assets\pdf-files\indskrivning-billum-friskole-2.pdf" download>
+          <button class="button">Indmeldelseblanket</button>
+        </a>
+      </p>
+    </div>
+    <div class="verticalspacer"></div>
+    <div class="verticalspacer"></div>
+    <div class="verticalspacer"></div>
+    <div class="verticalspacer"></div>
+    <div class="footertile">
+      <h1>Intranet</h1>
+      <p>
+        <input class="button" type="button" onclick="window.location.href='https://billumfriskole.viggo.dk/Account/Login?ReturnUrl=%2F'"value="login">
+      </p>
+      <h3>Facebook</h3>
+      <p>
+        <a href="https://www.facebook.com/billumfriskole/">
+          <img src="assets/images/icons/facebook.png" alt="Billum Friskole Facebook" style="width:50px;height:50px;">
+        </a>
+      </p>
+    </div>
+  </section>
+</footer>
+          </xmp>
+        </section>
+      </section>
+      <div class="horizontalspacer"></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+/* titles and text */
+@font-face {
+    font-family: "MyriadSetPro700";
+    src: url("../font/Myriad Set Pro 700 Bold.ttf");
+}
+@font-face {
+    font-family: "MyriadSetPro600";
+    src: url("../font/Myriad Set Pro 600 Semibold.ttf");
+}
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/Century Gothic Regular.ttf");
+}
+/* site/subsite name (eksempel "ansatte" eller "værdigrundlag") */
+h1{
+  font-family: "MyriadSetPro700";
+  font-size: 2em;
+  margin: 0;
+}
+/* underoverskrifter*/
+h2{
+  font-family: "MyriadSetPro600";
+  font-size: 1.5em;
+  margin: 0;
+}
+/* flere end 3 overskrifter på et site */
+h3{
+  font-family: "MyriadSetPro700";
+  font-size: 2em;
+  margin: 0;
+}
+h4{
+  text-align: right;
+  margin: 10px 10px 10px 0;
+}
+
+/* alt brødtext */
+p{
+  font-family: "CenturyGothic";
+  font-size: 1em;
+  margin: 0 10px 10px 0;
+}
+/* colorschemes */
+/* background-grey */
+.color01{
+  background-color: rgba(125, 125, 125, 1);
+}
+/* background-sand */
+.color02{
+    background-color: rgba(253, 248, 240, 1);
+}
+/* tile1 (index) */
+.color1{
+  background-color: rgba(190, 72, 131, 0.64);
+}
+/* tile2 (index) */
+.color2{
+  background-color: rgba(82, 212, 172, 0.64);
+}
+/* tile3 (index) */
+.color3{
+  background-color: rgba(255, 170, 85, 0.64);
+}
+/* tile4 (index) */
+.color4{
+  background-color: rgba(119, 168, 233, 0.64);
+}
+
+/* images */
+img{
+  width: 100%;
+}
+
+.image-fit{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-contain{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* image for fronttiles */
+/* top full width tile */
+.image000{
+background-image: url("../images/front-banner-på-tur.png");
+}
+/* second line tile 1 */
+.image001{
+  background-image: url("../images/tile1-aktivitet.jpg");
+}
+/* second line tile 2 */
+.image002{
+  background-image: url("../images/tile2-hjælpe-hinanden.jpg");
+}
+/* second line tile 3 */
+.image003{
+  background-image: url("../images/tile3-skolebog.jpg");
+}
+/* banner images */
+/* banner image for subsite "ansatte" */
+.image004{
+  background-image: url("../images/banner1-gruppe-læsning.jpg");
+}
+/* banner image for subsite "værdigrundlag" */
+.image005{
+  background-image: url("../images/banner2-billedkunst.jpg");
+}
+/* banner image for subsite "indmeldelse" */
+.image006{
+  background-image: url("../images/banner3-klasse-arbejde2.jpg");
+}
+.image007{
+  background-image: url("../images/logo-1.png");
+}
+.image008{
+  background-image: url("../images/logo-2.png");
+}
+
+/* ----------------------------------------------------------------------*/
+/* header */
+header{
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav h3{
+  color: rgba(253, 248, 240, 1);
+}
+
+nav p{
+  font-family: "MyriadSetPro600";
+  font-size: 1em;
+  margin: 0 10px 10px 0;
+  color: rgba(125, 125, 125, 1);
+}
+
+nav{
+  overflow: hidden;
+  align-self: flex-end;
+}
+
+nav a{
+  float: left;
+  text-align: center;
+  padding: 0px 40px;
+  text-decoration: none;
+}
+
+nav .nav-drop:last-child{
+  border-right: none;
+}
+
+nav a:hover, .nav-drop:hover .knap-drop h3{
+  background-color: white;
+  color: rgba(125, 125, 125, 1);
+}
+
+nav a:hover h3{
+  color: rgba(125, 125, 125, 1);
+}
+
+.nav-drop{
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid rgba(253, 248, 240, 1);
+}
+
+.nav-drop .knap-drop{
+  color: red;
+  padding: 0px 40px;
+  margin: 0;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 169px;
+  z-index: 1;
+  margin-top: 34px;
+  opacity: 0.9;
+}
+
+.dropdown-content a{
+  float: none;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-drop:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a:hover p{
+  color: black;
+}
+
+.dropdown-content:hover, .nav-drop:hover .knap-drop{
+  background-color: white;
+}
+
+.logo-tile{
+   align-self: flex-end;
+   padding-left: 6px;
+}
+
+.header-link-tile{
+ width: 120px;
+ height: 85px;
+ align-self: flex-end;
+}
+
+.header-link-tile a{
+   color: rgba(253, 248, 240, 1);
+   text-decoration: none;
+}
+
+.header-link-tile a:hover{
+   color: rgba(247, 226, 196, 1);
+   text-decoration: none;
+}
+
+.header-facebook-container{
+  display: flex;
+  text-decoration: none;
+}
+
+.header-intranet{
+  display: flex;
+  text-decoration: none;
+}
+
+/* footer */
+.box{
+  border: 0px;
+  height: 10px;
+  position: relative;
+  width: 104;
+  display: flex;
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 90%;
+  min-height: 10px;
+  background-color: rgba(253, 248, 240, 1);
+  display: flex;
+  padding: 0 5%;
+}
+
+.footertile{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.button{
+  background-color: rgba(125, 125, 125, 1);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------- */
+/* universal modifiers */
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-row{
+  flex-direction: row;
+}
+body{
+  margin: 0;
+}
+main{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+a {
+  text-decoration: none;
+}
+.flex1{
+  flex: 1;
+}
+.flex3{
+  flex: 3;
+}
+.flexgrow1{
+  flex-grow: 1;
+}
+
+/* tile building classes */
+.tilecontainer{
+  display: flex;
+  min-height: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.tile-full-width{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 10px;
+}
+.tile{
+  position: relative;
+  width: 200px;
+  min-height: 10px;
+}
+.line{
+  width: 100%;
+  height: 2px;
+}
+/* website spacers */
+/* spacer placing itself vertically, used for horizontal stacking */
+.verticalspacer{
+  width: 35px;
+  height: 10px;
+}
+/* spacer placing itself horizontally, used for vertical spacing */
+.horizontalspacer{
+  height: 35px;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------- */
+.index-typo{
+  padding: 10px;
+  top: 10px;
+  color: white;
+}
+.height400{
+  min-height: 400px;
+}
+.height200{
+  height: 200px;
+}
+.padding-left {
+  padding-left: 10%;
+}
+.padding-right {
+  padding-right: 10%;
+}
+.fullbox{
+  width: 100%;
+  height: 100%;
+}
+.tile-full-width a:hover .color1{
+  background-color: rgba(190, 72, 131, 0.9);
+}
+.tilecontainer a:hover section .color2{
+  background-color: rgba(82, 212, 172, 0.9);
+}
+.tilecontainer a:hover section .color3{
+  background-color: rgba(255, 170, 85, 0.9);
+}
+.tilecontainer a:hover section .color4{
+  background-color: rgba(119, 168, 233, 0.9);
+}
+
+.selfcenter {
+  padding: auto 0 auto 10px;
+}
+.white{
+  color: white;
+}
