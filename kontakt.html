@@ -81,21 +81,31 @@
       </section>
       <section class="tilecontainer flex-direction-row">
         <article class="tile flex3">
-          <p>Henvendelse</p>
+          <h2>Adresse, telefonnummer og e-mail til skolen:</h2>
+          <br>
+          <p>Billum friskole</p>
+          <p>Kildegårdvej 20</p>
+          <p>Tlf: + 45 51 88 95 96</p>
+          <p>gimo@billumfriskole.dk </p>
+          <br>
+          <h2>Eller skriv en besked direkte:</h2>
           <br>
           <p>Navn:</p>
-          <input type="text">
+          <input type="text" style="width:50%;">
           <p>Email:</p>
-          <input type="email">
+          <input type="email" style="width:50%;">
           <p>Telefon:</p>
-          <input type="tel">
+          <input type="tel" style="width:50%;">
           <p>Vedrørende:</p>
-          <input type="text">
+          <input type="text" style="height:100px;width:50%;">
           <br>
-          <div class="horizontalspacer"></div>
-          <button>Send</button>
+          <button onclick="myFunction()">Send</button>
+          <div id="snackbar">Tak, beskeden er sendt! Vi svarer så hurtigt som muligt!</div>
         </article>
-
+        <div class="verticalspacer"></div>
+        <section class="tile flex1">
+          <img src="assets\images\skole-kontakt.jpg" alt="skolen">
+        </section>
         <div class="horizontalspacer"></div>
       </section>
     </main>
@@ -144,6 +154,18 @@
         </div>
       </section>
     </footer>
-
   </body>
+  <!-- NOTE:
+  <script>
+  console.log("yes i am here!")
+
+  function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+  </script>
+  -->
+  <script scr="assets/js/snackbar.js"></script>
+  <script scr="C:/Users/MilenaSkovbjerg/Documents/GitHub/mena-exam/assets/js/script.js"></script>
 </html>
