@@ -99,8 +99,8 @@
           <p>Vedrørende:</p>
           <input type="text" style="height:100px;width:50%;">
           <br>
-          <button onclick="myFunction()">Send</button>
-          <div id="snackbar">Tak, beskeden er sendt! Vi svarer så hurtigt som muligt!</div>
+          <button class="button" onclick="sendBesked()">Send</button>
+          <div id="besked">Tak, beskeden er sendt! Vi svarer så hurtigt som muligt!</div>
         </article>
         <div class="verticalspacer"></div>
         <section class="tile flex1">
@@ -155,17 +155,5 @@
       </section>
     </footer>
   </body>
-  <!-- NOTE:
-  <script>
-  console.log("yes i am here!")
-
-  function myFunction() {
-      var x = document.getElementById("snackbar");
-      x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }
-  </script>
-  -->
-  <script scr="assets/js/snackbar.js"></script>
-  <script scr="C:/Users/MilenaSkovbjerg/Documents/GitHub/mena-exam/assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </html>

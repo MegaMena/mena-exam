@@ -1,7 +1,6 @@
-console.log("yes i am here!")
 
-function myFunction() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+function sendBesked() {
+    var besked = document.getElementById("besked");
+    besked.className = "show";
+    setTimeout(function(){ besked.className = besked.className.replace("show", ""); }, 3000);
 }

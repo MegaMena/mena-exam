@@ -266,11 +266,11 @@ footer{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  font-family: "CenturyGothic";
 }
 
-.button {
-  font-family: "CenturyGothic";
-  align-self: center;
+.button:hover {
+  background-color: rgba(100, 100, 100, 1);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -304,9 +304,10 @@ a {
 /* tile building classes */
 .tilecontainer{
   display: flex;
-  min-height: 10px;
+  height: 100%;
   width: 100%;
-  flex-wrap: wrap;
+  margin: 15px 0px;
+  justify-content: space-around;
 }
 .tile-full-width{
   position: relative;
@@ -316,7 +317,7 @@ a {
 }
 .tile{
   position: relative;
-  width: 200px;
+  width: 31%;
   min-height: 10px;
 }
 .line{
@@ -381,8 +382,12 @@ a {
   align-content: center;
 }
 
+.flex {
+  display:flex;
+  justify-content: center;
+}
 /*------------------------------------------------------*/
-#snackbar {
+#besked {
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
@@ -398,7 +403,7 @@ a {
     font-size: 17px;
 }
 
-#snackbar.show {
+#besked.show {
     visibility: visible;
 }
 
@@ -421,3 +426,33 @@ a {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+
+/*--------------------------------*/
+.slideshow-container {
+
+}
+.mySlides {
+    display: none;
+}
+
+.active{
+  background-color: red;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+{box-sizing: border-box}
