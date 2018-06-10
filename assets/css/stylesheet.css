@@ -399,33 +399,13 @@ a {
     position: fixed;
     z-index: 1;
     left: 47%;
-    bottom: 30px;
+    bottom: 100px;
     font-size: 17px;
     font-family: "CenturyGothic";
 }
 
 #besked.show {
     visibility: visible;
-}
-
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
 }
 
 /*--------------------------------*/
@@ -438,13 +418,13 @@ a {
 }
 
 .active{
-  background-color: red;
+    background-color: rgba(82, 212, 172, 1);
 }
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
