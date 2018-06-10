@@ -26,21 +26,20 @@ function currentDiv(n) {
   showDivs(slideIndex = n);
 }
 
-//
 function showDivs(n) {
   //Standard for writting loops
   var i;
-  //this variable get's its value by getting the element with the class 'mySlides' into an array with 3 'elements'
-  var x = document.getElementsByClassName("mySlides");
+  //this variable get's its value by getting the element with the class 'slides' into an array with 3 'elements'
+  var slides = document.getElementsByClassName("slides");
   //this gets the value from class 'demo'
   var dots = document.getElementsByClassName("demo");
   //runs the loops as many times as there are slides
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < slides.length; i++) {
     //Every slide gets the styledisplay none:
-     x[i].style.display = "none";
+     slides[i].style.display = "none";
   }
   //gives the class block to slide 1, but with js logic, as it starts with 0
-    x[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
 
 //replaces the class from the buttons, from active to none
   for (i = 0; i < dots.length; i++) {

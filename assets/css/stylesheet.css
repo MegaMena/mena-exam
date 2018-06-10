@@ -205,14 +205,16 @@ nav a:hover, nav a:hover h3, .nav-drop:hover .knap-drop h3{
 }
 
 .logo-tile{
+  height: 100%;
   display: flex;
   flex: 1;
   align-self: flex-end;
 }
 
 .header-link-tile{
- height: 85px;
- align-self: flex-end;
+  height: 100%;
+  height: 85px;
+  align-self: flex-end;
 }
 
 .header-link-tile a{
@@ -251,7 +253,7 @@ footer{
 
 .footertile{
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -387,6 +389,14 @@ a {
   display:flex;
   justify-content: center;
 }
+
+.right {
+  direction: rtl;
+}
+
+.text {
+  text-align: center;
+}
 /*------------------------------------------------------*/
 #besked {
     visibility: hidden;
@@ -413,7 +423,7 @@ a {
   margin-bottom: 30px;
 
 }
-.mySlides {
+.slides {
     display: none;
 }
 
@@ -436,4 +446,3 @@ a {
   from {opacity: .4}
   to {opacity: 1}
 }
-{box-sizing: border-box}
