@@ -232,6 +232,10 @@ nav a:hover, nav a:hover h3, .nav-drop:hover .knap-drop h3{
   text-decoration: none;
 }
 
+.pp {
+  margin: 5px 10px 5px 0px;
+}
+
 /* footer */
 .box{
   border: 0px;
